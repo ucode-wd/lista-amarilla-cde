@@ -1,0 +1,87 @@
+header{
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+.logo img{
+    height: 100%;  
+}
+.logo img:hover{
+    cursor: pointer;
+}
+header h1{
+    color: #FEE440;
+    margin: 0;
+    font-size: 30px;
+}
+header a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 3vh;
+    font-size: 18px;
+}
+header i{
+    display: none !important;
+}
+header nav{
+    width: 60vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 3vh;
+}
+nav a:hover{
+    color: #FEE440;
+    background-color: #fafafa;
+}
+@media(max-width: 830px){
+    .logo{
+        position: absolute;
+        font-size: 27px;
+    }
+    header{
+        padding: 0;
+        width: 100%;
+    }
+    section{
+        padding-top: 14vh;
+    }
+    header i{
+        position: absolute;
+        display: block !important;
+        font-size: 4vh;
+        right: 3vh;
+    }
+    header nav{
+        margin-top: -58vh;
+        background-color: #eee;
+        width: 100%;
+        transition: margin-top .6s;
+    }
+    nav a{
+        display: block;
+        font-size: 15px;
+    }
+    .responsive{
+        margin-top: 24vh;
+        transition: margin-top .6s;
+    }
+}
+@media(max-width: 500px){
+    header h1{
+        display: none;
+    }
+}

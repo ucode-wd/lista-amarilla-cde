@@ -1,0 +1,72 @@
+.animate__animated.animate__pulse {
+    --animate-duration: .8s;
+}
+body{
+    overflow-y: hidden;
+}
+.quejas__container{
+    height: 100vh;
+    text-align: center;
+    padding-top: 20vh;
+    width: 80%;
+    background-color: #FEE44088;
+    margin: auto;
+    padding: 30vh 0;
+}
+.quejas__container h2{
+    font-weight: bold;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.contact__form *{
+    height: 5vh;
+    border: none;
+    width: 100%;
+    border: 1px solid #000;
+    font-weight:  bold;
+    background-color: #fff;
+    margin-top: 3vh;
+}
+.form__container{
+    width: 65vh;
+    height: 50vh;
+    margin: auto;
+}
+.contact__form textarea{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    height: 20vh;
+}
+.contact__form textarea::placeholder{
+    font-size: 2vh;
+    color: #000;
+}
+.contact__form textarea:focus{
+    background-color: #f8d700;
+    outline: none;
+    outline: 1px solid #000;
+}
+
+@media(max-width: 800px){
+    #quejas{
+        margin: 0;
+        width: 100%;
+        padding-top: 14vh;
+    }
+    .form__container{
+        width: 100%;
+    }
+    .form__container *{
+        width: 96%;
+        margin: auto;
+        margin-top: 3vh;
+    }
+    .quejas__container{
+        padding-top: 5vh;
+    }
+}

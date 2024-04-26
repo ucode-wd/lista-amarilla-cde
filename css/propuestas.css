@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+#propuestas{
+    min-height: 100vh;
+    background:url(../img/fondo.jpg);
+    background-size: cover;
+    padding-top: 110px;
+
+}
+.decoration__line{
+    height: 5vh;
+    background: linear-gradient(90deg,
+    #9B5DE5 20%,
+    #F15BB5 20% 40%,
+    #FEE440 40% 60%,
+    #00BBF9 60% 80%,
+    #00F5D4 80% 100%);
+}
+.accordion__container{
+    padding: 4vh;
+    width: 80%;
+    height: 80%;
+    background-color: #fffc;
+    margin: 10vh 0;
+    margin: auto;
+    text-align: center;
+}
+.accordion__container p{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+.accordion__container button{
+    font-size: 20px;
+}
+@media(max-width: 900px){
+    .accordion__container{
+        width: 100%;
+        margin-top: 0;
+        background-color: #fff5;
+    }
+    .accordion__container p{
+        font-family: 'Bree Serif', serif;
+        font-size: 12px;
+    }
+}
+@media(max-width: 830px){
+}
